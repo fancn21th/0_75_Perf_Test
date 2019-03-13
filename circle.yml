@@ -1,0 +1,5 @@
+deployment:
+  production:
+    branch: master
+    commands:
+      - surge --project ./src --domain flimsy-scent.surge.sh
