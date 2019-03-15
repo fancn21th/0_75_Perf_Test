@@ -23,13 +23,13 @@ jobs:
   # Sample build task
   build:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:10-browsers
     steps:
       - checkout
       - <<: *restore_cache
       - <<: *install_node_modules
       - <<: *persist_cache
-      - run: yarn test
+      - run: yarn test:lighthouse
 
   # Deploy with Surge task
   deploy:
