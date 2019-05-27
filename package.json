@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "local": "lighthouse --view --output html --output-path ./reports/report.html --config-path=./config/lighthouse.js http://127.0.0.1:8081",
     "serve": "http-server ./src -p 9000",
     "start": "http-server ./src -p 9000",
     "deploy": "surge --project ./src --domain flimsy-scent.surge.sh",
