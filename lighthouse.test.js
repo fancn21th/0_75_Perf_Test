@@ -58,9 +58,9 @@ test("performance audit", async () => {
 
     console.log(output(scores));
 
-    expect(scores.performance).toBeGreaterThanOrEqual(0.20);
-    expect(scores.accessibility).toBeGreaterThanOrEqual(0.33);
-    expect(scores["best-practices"]).toBeGreaterThanOrEqual(0.33);
-    expect(scores.seo).toBeGreaterThanOrEqual(0.33);
+    expect(scores.performance).toBeGreaterThanOrEqual(0.2);
+    expect(scores.accessibility).toBeGreaterThanOrEqual(0.2);
+    expect(scores["best-practices"]).toBeGreaterThanOrEqual(0.2);
+    expect(scores.seo).toBeGreaterThanOrEqual(0.2);
   }
 }, 300000);
