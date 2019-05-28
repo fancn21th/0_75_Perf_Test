@@ -10,7 +10,7 @@ aliases:
   install_node_modules: &install_node_modules
     run:
       name: Install node modules
-      command: yarn --frozen-lockfile
+      command: yarn
 
   persist_cache: &persist_cache
     save_cache:
@@ -47,4 +47,4 @@ workflows:
       - build
       - deploy:
           requires:
-              - build
+            - build
